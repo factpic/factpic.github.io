@@ -6,12 +6,17 @@
 	
 	
 	<link rel="icon" href="img\logo red small.jpg">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	
+
     <!-- Optional Bootstrap theme -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="CSS\imgSlide.css">
 
 <style type="text/css">
 
@@ -20,6 +25,8 @@
 	.box {		
 				padding:5px;
 			}
+			
+			
 	
 	
 	.navbar li a, .navbar .navbar-brand {
@@ -29,21 +36,22 @@
   											}
 
 	.navbar {
-      			margin-bottom: 0;
-      			padding: 15px; 
-      			background-color:white;				
+      			margin-bottom: 10px;
+      			padding: 20px; 
+      			background-color: #6F7085;				
       			z-index: 9999;
       			border: 0;
     			font-size: 12px !important;
       			line-height: 1.42857143 !important;
       			letter-spacing: 2px;
-			    border-radius: 0;
+			    border-radius: 0%;
 			    font-family: "Arial" , sans-serif;			/* Montserrat  */
+			    
   		}
   
   
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: black !important;
+      color: white !important;
       background-color: #D8D5DE !important;
   }
   
@@ -52,12 +60,29 @@
    {
       border-color: transparent;
       color: #fff !important;
+      position: fixed;
   	}
   
   
   
+  	.heading{
+				font-family: serif; 
+				font-weight: bolder;
+				text-transform: uppercase;
+				border-color: black;
+				border-radius: 100px;
+				font-size: 17px;
+				text-align: left;
+				position: absolute;
+				color: white;
+	}
+
   
   
+  
+  
+  
+ /* // Related to videos ---------------------------------------                        */
 
 	.panel{
 			     border: 1px solid #f4511e; 
@@ -104,16 +129,11 @@
 				}
 				
 				
-	.heading{
-				font-family: serif; 
-				font-weight: bolder;
-				text-transform: uppercase;
-				border-color: black;
-				border-radius: 100px;
-				font-size: 17px;
-				text-align: center;
-	}
+
 	
+	
+	
+
 	
 	.btn
 				{
@@ -121,11 +141,12 @@
 					padding:10px 40px 10px 40px;
 					background-color: red;
 					
-					border: 1px solid #666;
-					border-radius: 5px;
+					font-family: 'Alegreya Sans SC';
+					border: 0px solid #666;
+					border-radius: 50px;
 					font-size: 20px;
 					cursor: pointer;
-					
+					outline-width: 20px;
 					
 				}
 				
@@ -134,31 +155,93 @@
 						box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 						
 					}
+					
+					
+/*Related sample blogs		----------------------------------------------------------------------------	*/
+
+	
+	
 	
 			
-		.subs-block
+		.byline
 					{
-						background-image: url("");
+						border: 1px green solid;
+						margin: 1px;
+						padding: 10px;
+						
+						position: relative;
+						
+						display:block;
+						
+						
+					}
+					
+					
+		.title-bar a{
+						margin:  10px;
+						padding: 10px;
+						font-family: 'Alegreya Sans ';
+						font-size: 30px;
+						border-bottom: 1px solid green;
+						color: black;
+	
+					}	
+	
+					
+					
+			.post 
+					{	
+						margin:10px;
+						padding: 06px;
+						
+						font-weight: bold;
+						font-size:15px;
+						font-family:"PT Sans", sans-serif;
+						color:#2d2c2a;
+						
+						position: relative;
+						
+						border-bottom: 1px solid green;
+
+					}	
+					
+
+						
+	div a:HOVER {
+					color: #ff5c1c;
+					text-decoration: none;
+				}
+	
+	
+	
+	.content p {
+				margin: 10px;
+				padding: 10px;
+				font-size: 25px;
+				font-family: 'Alegreya Sans ';
+			}
+
+	
+	.continue-reading {
+						margin: 10px;
+						padding: 10px;
+						outline: none;
+						background-color: #92a8a2;
+						border-bottom: 1px solid green;
+						font-family: 'Alegreya Sans SC';
+						font-size: 20px;
+						
 					}
 					
 					
 					
+	.side{
+				text-align: center;
 	
-					
-					
-	.older-post h4 a p
-					{	
-						margin:15px;
-						padding:10px;
-						
-						font-weight:bold;
-						font-size:28px;
-						font-family:"PT Sans", sans-serif;
-						color:#2d2c2a;
-						
-						position: absolute;
-					}		
+			}
 	
+	
+/*	// Related to footer-------------------------------------------------------------*/
 	
 	.bd-footer
 				{
@@ -174,7 +257,7 @@
 					font-size: 16px;
 					
 					border-left: 18px solid green;
-					
+					 
 				}
 		
 	.bd-footer-links
@@ -208,18 +291,130 @@
 				}
 	
 	
-	
+
 	
 	
 
 		
-
-		/* On smaller screens, decrease text size */
 		
-		@media only screen and (max-width: 300px) 
-												{
-									  			.text {font-size: 11px}
-												}
+		
+		
+		
+		
+@media only screen and (max-device-width: 480px)		/* styles for mobile browsers smaller than 480px; (iPhone) */
+  {
+  
+  
+    
+	  
+	.older-post
+			{
+				
+				height: auto !important;
+				padding: 20px 0 20px 0;
+	  		}
+	  		
+	  		
+	  		
+	  	
+		.email{
+						size:"20";
+			}
+		
+		
+
+	}
+
+
+
+
+@media only screen and (device-width:768px)		/* default iPad screens */
+	{
+      
+	  
+	.older-post
+		{
+			height: auto !important;
+			padding: 30px 0 20px 0;
+	  	}
+	  	
+	  	
+	  .panel{
+
+	  			width:100% !important; 
+				max-width: 600px !important;
+	  			height: auto !important;
+
+	  		}
+	
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+    @media (min-width:961px) 			/* tablet, landscape iPad, lo-res laptops ands desktops */
+        {
+    
+   	 
+	  
+	.older-post
+		{
+			height: auto !important;
+			padding: 30px 0 20px 0;
+	  	}
+	  	
+	  	
+	  .panel{
+
+	  			width:100% !important; 
+				max-width: 1100px !important;
+	  			height: auto !important;
+
+	  		}
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+        
+   @media only screen and (min-width: 1140px)     /*  ipad pro 	*/
+    {
+    
+   	
+	  
+	.older-post
+		{
+			height: auto !important;
+			padding: 30px 0 20px 0;
+	  	}
+	  	
+	  	
+	  .panel{
+
+	  			width:100% !important; 
+				max-width: 900px !important;
+	  			height: auto !important;
+
+	  		}
+    
+    
+    }
+	
+								
+												
+												
+		
 
 
 
@@ -239,6 +434,10 @@
 
 <body>
 
+
+<!--  Nav bar -->
+
+
 	<nav class="navbar navbar-default" >
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -248,40 +447,85 @@
      		 </button>
 			
 		</div>
-			<div class="heading col-sm-2">
+			<div class="heading col-sm-3">
 				
 				<h1>FACT PIC</h1>
 			</div>
 			<div class="collapse navbar-collapse" id="#myNavbar">
 			
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#about">	 Blog	</a></li>
-				<li><a href="About.html">  About	</a></li>
-				<li><a href="#contacts"> Contact  </a></li>
+				<li><a href="index.html">	Home	</a></li>
+				<li><a href="Admin.html">	Blogger	</a></li>
+				<li><a href="About.html">	About	</a></li>
+				<li><a href="#contacts">	Contact  </a></li>
 			</ul>
 		</div>
 	</nav>
 	
 		
+		
+<!--  Slide Show -->		
+
 	
-	<div class="jumbotron text-center">
+	<div class="slide">
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-12">
+			
+			<div class="slideshow-container">
+
+				<div class="myslides  w3-animate-right">
+					<div class="numbers">1 / 4</div>
+					<div><img class="slide" alt="img" src="img\image-nat.jpg"></div>
+			
+					<div class="caption">  
+  						<h1>Animation is Fun!</h1>
+  					</div>
+				</div>
+
+
+				<div class="myslides w3-animate-right">
+					<div class="numbers">2 / 4</div>
+					<div><img class="slide" alt="img" src="img\image-kri.jpg"></div>
+					<div class="caption">Text 2</div>
+				</div>
+
+
+				<div class="myslides w3-animate-right">
+					<div class="numbers">3 / 4</div>
+					<div><img class="slide" alt="img" src="img\Wall bulb.jpg"></div>
+					<div class="caption w3-animate-left">Text 3</div>
+				</div>
+
+				<div class="myslides w3-animate-right">
+					<div class="numbers">4 / 4</div>
+					<div><img class="slide" alt="img" src="img\Goofy.jpg"></div>
+					<div class="caption">Text 4</div>
+				</div>
+		
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 			</div>
-			<div class="col-sm-4">
-  		  		<div class="form-tab">
-    	  			<input type="email" class="email" size="50" placeholder="Email Address..." required>
-     	  		</div>
-     	  		<div>	
-          			<button type="button" class="btn">Subscribe</button>
-    	 		</div>
-    	 	</div>	
+<br>
+
+
+				<div style="text-align:center">
+					<span class="dots" onclick="currentSlide(1)"></span>
+					<span class="dots" onclick="currentSlide(2)"></span>
+					<span class="dots" onclick="currentSlide(3)"></span>
+					<span class="dots" onclick="currentSlide(4)"></span>
+				</div>
+
+
+				
+			
+			</div>
  		 </div>
 	</div>
 
 	
 	
-	
+<!--  Latest video -->
 
 	
 	<div class="container-fluid">
@@ -295,24 +539,24 @@
 			
 					<div class="col-sm-3">
 						<iframe src="https://www.youtube.com/embed/Lg-cBtmeMTs"
-   							width="200" height="120" frameborder="0" allowfullscreen></iframe>
+   							width="200" height="120" frameborder="05" allowfullscreen></iframe>
 					</div>		
 					
 					
 					<div class="col-sm-3">
 						<iframe src="https://www.youtube.com/embed/Lg-cBtmeMTs"
-   							width="200" height="120" frameborder="0" allowfullscreen></iframe>
+   							width="200" height="120" frameborder="05" allowfullscreen></iframe>
 					</div>	
 					
 					
 					<div class="col-sm-3">
 						<iframe src="https://www.youtube.com/embed/Lg-cBtmeMTs"
-   							width="200" height="120" frameborder="0" allowfullscreen></iframe>
+   							width="200" height="120" frameborder="05" allowfullscreen></iframe>
 					</div>		
 					
 					<div class="col-sm-3">
 						<iframe src="https://www.youtube.com/embed/Lg-cBtmeMTs"
-   							width="200" height="120" frameborder="0" allowfullscreen></iframe>
+   							width="200" height="120" frameborder="05" allowfullscreen></iframe>
 					</div>	
 	
 				</div>
@@ -330,63 +574,66 @@
 	
 
 
-	<div class="container">
+
+	
+	<!--  Blog Display -->
+
+	
+	
+	<div class="container-blog">
 		<div class="row">
-		<div class="col-sm-2">
-		</div>
-		<div class="col-sm-8">
-			<div class="older-post-list cf">
-       			<div class="older-post">
-					<h4 class="entry-title"><a href="http://channelempire.com/best-cheap-cameras-for-youtube/" title="Permalink to Best Cheap Cameras for YouTube: Top 5 Under $500!" rel="bookmark">Best Cheap Cameras for YouTube: Top 5 Under $500!</a></h4>
-                    	<p class="post-meta"><a href="http://channelempire.com/author/andy/" title="View all posts by andy" rel="author">andy</a></p>                    
-                    		<a href="http://channelempire.com/best-cheap-cameras-for-youtube/" title="Best Cheap Cameras for YouTube: Top 5 Under $500!" rel="bookmark" class="post-image">
-                    			<img width="630" height="315" src="http://channelempire.com/wp-content/uploads/2017/06/best-cheap-cameras-for-youtube-630x315.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="best-cheap-cameras-for-youtube" />
-                    		</a>                      
-                    		  <p style="font-size:medium;">One of the most popular questions I get is:
-                    		   What is the best cheap camera for YouTube videos? After being a YouTuber for years and going through many different cameras,
-                    		    I know how hard it can be to choose the perfect camera without draining your bank account. So I created this video of the Top 5&hellip;</p>
-							<p class="continue-reading"><a href="http://channelempire.com/best-cheap-cameras-for-youtube/">Continue Reading &rarr;</a></p>
+			<div class="col-sm-1">
+			
+			</div>
+			<div class="col-sm-7 byline">
+				
+	 			<div class="older-post">
+					<div class="title-bar">
+						<a href=" " title="Heading">Salient features of an OPC</a>
+					</div>
+					<div class="post">
+						<p><a href="http://channelempire.com/author/andy/" title="View all posts by andy" rel="author">Deepak</a></p>  
+					</div>		
+					<div class="content">
+						<p> The OPC must have only one member at any point of time and may have only one director  
+						The OPC must have a nominee who must be an individual.  Minor shall not become member or nominee of the One Person Company  Both the member and </p>
+					</div>	
+						<button class="continue-reading"><a id="nonunderline" href="http://channelempire.com/best-cheap-cameras-for-youtube/"></a>Continue Reading &rarr;</button>
+                    		
+						
+					
 				</div>
 			</div>
-		</div>	
-			<div class="col-sm-2">
-			</div>
-		</div>
-	 </div>
-	
-	
-	
-	
-		<div class="container">
-		<div class="row">
-		<div class="col-sm-2">
-		</div>
-		<div class="col-sm-8">
-			<div class="older-post-list cf">
-       			<div class="older-post">
-					<h4 class="entry-title"><a href="http://channelempire.com/best-cheap-cameras-for-youtube/" title="Permalink to Best Cheap Cameras for YouTube: Top 5 Under $500!" rel="bookmark">Best Cheap Cameras for YouTube: Top 5 Under $500!</a></h4>
-                    	<p class="post-meta"><a href="http://channelempire.com/author/andy/" title="View all posts by andy" rel="author">andy</a></p>                    
-                    		<a href="http://channelempire.com/best-cheap-cameras-for-youtube/" title="Best Cheap Cameras for YouTube: Top 5 Under $500!" rel="bookmark" class="post-image">
-                    			<img width="630" height="315" src="http://channelempire.com/wp-content/uploads/2017/06/best-cheap-cameras-for-youtube-630x315.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="best-cheap-cameras-for-youtube" />
-                    		</a>                      
-                    		  <p style="font-size:medium;">One of the most popular questions I get is:
-                    		   What is the best cheap camera for YouTube videos? After being a YouTuber for years and going through many different cameras,
-                    		    I know how hard it can be to choose the perfect camera without draining your bank account. So I created this video of the Top 5&hellip;</p>
-							<p class="continue-reading"><a href="http://channelempire.com/best-cheap-cameras-for-youtube/">Continue Reading &rarr;</a></p>
+			
+			
+			
+<!--  Side for Subscribtion and Ads -->			
+
+			<div class="col-sm-3 byline">
+				<div class="side">
+	  		  		<div class="form-tab"  >
+    	  				<input style="background-color: #e4def4;" type="email" class="email" size="20" placeholder="Email Address..." required>
+     	  			</div>
+     	  			<div>	
+          				<button type="button" class="btn">Subscribe</button>
+    	 			</div>
 				</div>
 			</div>
-		</div>	
-			<div class="col-sm-2">
-			</div>
+
+
 		</div>
-	 </div>
+	</div>
+		
+	 
+	 
+	 
 	 
 	 
 	 
 	 
 	
 
-
+<!--  Footer -->
 
 
 	<footer class="bd-footer">
@@ -405,7 +652,8 @@
 
 
 
-	
+	<script type="text/javascript" src="F:\Eclipse WorkSpace\Kaha Web\javascript\imgSlide.js"></script>
+
 
 	
 </body>

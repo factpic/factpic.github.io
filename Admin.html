@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Background</title>
-
+<meta charset="ISO-8859-1">
+<title>factpic</title>
+	
+	
 	<link rel="icon" href="F:\Eclipse WorkSpace\Kaha Web\img\logo red small.jpg">
 	
 
@@ -15,13 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="CSS\imgSlide.css">
-		
-	
-	
 
-
-<style>
-
+<style type="text/css">
 
 
 	
@@ -67,7 +64,6 @@
   	}
   
   
-
   
   	.heading{
 				font-family: serif; 
@@ -80,24 +76,105 @@
 				position: absolute;
 				color: white;
 	}
+
+  
+  
+
+
+
+/*Related sample blogs		----------------------------------------------------------------------------	*/
+
+	
+	
+	
+			
+		.byline
+					{
+						border: 1px green solid;
+						margin: 1px;
+						padding: 10px;
+						
+						position: relative;
+						
+						display:block;
+						
+						
+					}
+					
+					
+		.title-bar a{
+						margin:  10px;
+						padding: 10px;
+						font-family: 'Alegreya Sans ';
+						font-size: 30px;
+						border-bottom: 1px solid green;
+						color: black;
+	
+					}	
+	
+					
+					
+			.post 
+					{	
+						margin:10px;
+						padding: 06px;
+						
+						font-weight: bold;
+						font-size:15px;
+						font-family:"PT Sans", sans-serif;
+						color:#2d2c2a;
+						
+						position: relative;
+						
+						border-bottom: 1px solid green;
+
+					}	
+					
+
+						
+	div a:HOVER {
+					color: #ff5c1c;
+					text-decoration: none;
+				}
+	
+	
+	
+	.content p {
+				margin: 10px;
+				padding: 10px;
+				font-size: 25px;
+				font-family: 'Alegreya Sans ';
+			}
+
+	
+	.continue-reading {
+						margin: 10px;
+						padding: 10px;
+						outline: none;
+						background-color: #92a8a2;
+						border-bottom: 1px solid green;
+						font-family: 'Alegreya Sans SC';
+						font-size: 20px;
+						
+					}
+					
+					
+					
+	.side{
+				text-align: center;
+	
+			}
   
   
   
-
-
-</style>
-
-
-
-
-
-
+  </style>
 </head>
 <body>
 
 
 
-<!--  Nav bar -->
+<!--  Nav bar----- -->
+
 
 	<nav class="navbar navbar-default" >
 		<div class="navbar-header">
@@ -122,50 +199,35 @@
 			</ul>
 		</div>
 	</nav>
-
-
-
-	<div class="jumbotron text-center">
+	
+	
+	
+	
+	
+	
+		<div class="">
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-1">
 			</div>
-			<div class="col-sm-4">
-				<button class="button" onclick="onFunction()"> ON </button>
-				<button class="button" onclick="offFunction()"> OFF </button>
-    	 	</div>	
+			
+			<div class="col-sm-7 col-md-4">
+				<textarea cols="90" rows="30" spellcheck="true" translate="yes"></textarea>
+			</div>
+			
+			<div class="col-sm-3">
+			</div>
  		 </div>
 	</div>
-
-
-
-
-
-
-
-
-<div class="about-content">
-	<h1>Under Development</h1>
-</div>
-
-
-
-<script>
-function onFunction()
-{   
-document.body.style.backgroundColor= "#8A53A5";
-}
-
-
-
-function offFunction()
-{
-	document.body.style.backgroundImage="img\Wall bulb.jpg";
-	document.body.style.backgroundColor= "#2FC3EB";
-	}
 	
-</script>
-
+	
+	
+	
+	
+	
+				<script src="JavaScript\RichTextEditor.js" type="text/javascript"></script>
+				<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>	
+	
+	
+	
 </body>
-
-
 </html>
