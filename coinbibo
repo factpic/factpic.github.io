@@ -1,0 +1,60 @@
+
+
+API
+********************************************************************
+
+CEX.IO
+***********
+https://cex.io/api/tickers/USD/EUR/RUB/BTC
+
+
+COINSECURE.IN
+***********
+ curl --data '{"apiKey":"yourApikey"}' https://api.coinsecure.in/v1/exchange/ticker -1
+                    --header "Content-type: application/json, X-CSAPI-Allow"
+					
+					
+					
+
+
+UNOCOIN
+***********
+Buy Bitcoin Price: https://www.unocoin.com/trade.php?buy
+Sell Bitcoin Price: https://www.unocoin.com/trade.php?sell
+Average Bitcoin Price: https://www.unocoin.com/trade.php?avg
+All the above: https://www.unocoin.com/trade.php?all
+
+
+Recent Buys: https://www.unocoin.com/trade.php?recentbuys
+Recent Sells: https://www.unocoin.com/trade.php?recentsells
+
+
+ZebPay
+***********
+https://www.zebapi.com/api/v1/market/ticker/btc/inr
+
+
+
+Koinex
+***********
+https://koinex.in/api/ticker
+
+
+Remitano
+***********
+INR can be used, but there is no API
+
+
+LocalBitcoin
+***********
+https://localbitcoins.com/api/notifications/
+
+
+
+Changelly
+***********
+https://github.com/changelly/api-changelly
+https://changelly.com/developers
+https://changelly.com/developers#revenue
+
+
